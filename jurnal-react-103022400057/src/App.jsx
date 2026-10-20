@@ -1,15 +1,33 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
+
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const n = 57
+  const jam = 14
+ 
   return (
     <>
-      <section id="center">
+    <section id ="no1">
+      <div className = "judul">
+        <h1>Kantin Rifki_1030224000057</h1>
+      </div>
+      <p>{(jam) <12 ? "selmaat pagi" : "selamat siang"}</p>
+      <p>saldo awal kartu kantin: Rp {n*1000}</p>
+      <button
+      type="button"
+      disabled
+      id="button"
+      className="bayar"
+     >bayar</button>
+    </section>
+
+
+
+
+
+      {/* <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
@@ -37,7 +55,7 @@ function App() {
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#documentation-icon"></use>
           </svg>
-          <h2>Documentation</h2>
+          <h2>KANTIN RIFKI </h2>
           <p>Your questions, answered</p>
           <ul>
             <li>
@@ -114,7 +132,7 @@ function App() {
       </section>
 
       <div className="ticks"></div>
-      <section id="spacer"></section>
+      <section id="spacer"></section> */}
     </>
   )
 }
